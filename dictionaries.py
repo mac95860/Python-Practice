@@ -40,3 +40,4 @@ print(dictionary.keys())
 #dict.pop
 #dict.popitem, removes arbitrary last item. pops out key and value as tuple
 #dict.clear()
+#sort(dict)
