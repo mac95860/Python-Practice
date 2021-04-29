@@ -32,6 +32,13 @@ datetime_today = datetime.datetime.now(tz = pytz.UTC)
 datetime_pacific = datetime_today.astimezone(pytz.timezone('US/Pacific'))
 print(datetime_pacific)
 
-for tz in pytz.all_timezones:
-    print(tz)
+# for tz in pytz.all_timezones:
+#     print(tz)
 
+print(datetime_pacific.strftime('%B %d, %Y'))
+
+# March 09, 2019
+
+#strptime
+datetime_thing = datetime.datetime.strptime('March 09, 2019', '%B %d, %Y')
+print(repr(datetime_thing))
