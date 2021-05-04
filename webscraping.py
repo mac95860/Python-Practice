@@ -12,4 +12,6 @@ week = soup.find(id='seven-day-forecast-body')
 # print(week)
 
 # to access a class, you must call a class as class_
-print(week.find_all(class_ = 'tombstone-container'))
+# print(week.find_all(class_ = 'tombstone-container'))
+items = (week.find_all(class_ = "tombstone-container"))
+print(items)
